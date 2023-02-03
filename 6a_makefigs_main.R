@@ -151,7 +151,7 @@ tornado_both <-
 
 ## Fig 2B: Two way -------------------
 
-#load("publication_code/results/tsa_main.RData")
+#load("results/tsa_main.RData")
 
 burden_tsa1 <- burden_tsa$hosps_tsa %>% 
   mutate(season = paste(season, "severity"))
