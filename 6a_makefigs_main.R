@@ -2,6 +2,7 @@
 
 rm(list=ls())
 
+library(tidyverse)
 library(patchwork)
 library(ggforce)
 library(scico)
@@ -21,7 +22,7 @@ errorsize  <- 0.35
 
 linesize <- 1.3
 
-textsize <- 12
+textsize <- 9
 mytheme1 <- theme_bw() + theme(strip.text.x = element_text(size = textsize - 1),
                                strip.text.y = element_text(size = textsize - 1),
                                axis.text.y  = element_text(size = textsize - 1),
@@ -92,10 +93,10 @@ p_percentage <- burden %>% filter(Scenario != "Baseline") %>%
   scale_y_continuous()
 
 fig1 <- p_absolute + p_percentage + 
-  plot_layout(guides = "collect") &
-  plot_annotation(tag_levels = "A")
+          plot_layout(guides = "collect") &
+          plot_annotation(tag_levels = "A")
 
-ggsave("figures/Fig1.pdf", fig1, width = 9.5, height = 6)
+ggsave("figures/Fig1.pdf", fig1, width = 7, height = 6)
 
 
 ## Fig 2: Sensitivity analyses -------------------------------------------------
@@ -151,7 +152,7 @@ tornado_both <-
 
 ## Fig 2B: Two way -------------------
 
-#load("results/tsa_main.RData")
+load("results/tsa_main.RData")
 
 burden_tsa1 <- burden_tsa$hosps_tsa %>% 
   mutate(season = paste(season, "severity"))
@@ -179,4 +180,4 @@ fig2 <- tornado_both /
   plot_layout(heights = c(1, 1)) & 
   plot_annotation(tag_levels = 'A') 
 
-ggsave("figures/Fig2.pdf", fig2, width = 6.5, height = 5)
+ggsave("figures/Fig2.pdf", fig2, width = 7, height = 5)

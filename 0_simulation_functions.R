@@ -1,11 +1,8 @@
 ## File description and notes --------------------------------------------------
 # Sinead E Morris
-# Edit of original SEAIRVTModel.R from flumodels
+# Edit of original SEAIRVTModel.R from flumodels to include 2 vaccine classes
+# (standard vaccines and higher-dose or adjuvanted vaccines)
 
-# Major edits made:
-# 1. removed contactMatrices and contactMatrixStartDay options
-#   (was having errors when trying to just specify contactMatrix)
-# 2. A_Av_to_Symp -> multiple Av and Avb by (1 - VEp)
 
 ## Main Function --------------------------------------------------------------------
 
