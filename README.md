@@ -3,7 +3,7 @@
 
 This repository contains code required to reproduce results from the following paper: 
 
-SE Morris, LA Grohskopf, JM Ferdinands, C Reed, M Biggerstaff (2023) **Evaluating potential impacts of a preferential vaccine recommendation for adults aged 65 and older on United States influenza burden**. Epidemiology.
+SE Morris, LA Grohskopf, JM Ferdinands, C Reed, M Biggerstaff (2023) **Evaluating potential impacts of a preferential vaccine recommendation for adults 65 years of age and older on US influenza burden**. Epidemiology.
 
 There is no original data associated with this work. 
 

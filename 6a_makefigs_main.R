@@ -36,7 +36,7 @@ mytheme1 <- theme_bw() + theme(strip.text.x = element_text(size = textsize - 1),
                                axis.ticks.x = element_blank(),
                                plot.title   = element_text(size = textsize)) 
 
-textsize <- 9
+
 mytheme2 <- theme_bw() + theme(strip.text.x = element_blank(),
                                axis.text    = element_text(size = textsize - 1),
                                axis.title   = element_text(size = textsize),
